@@ -4,7 +4,6 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using DevExpress.Web.Data;
-using DevExpress.Web.ASPxGridView;
 
 public partial class _Default : System.Web.UI.Page {
     protected List<GridDataItem> GridData {
