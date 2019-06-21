@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - A simple Batch Editing implementation
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e5045/)**
+<!-- run online end -->
 
 
 <p>This example illustrates a simple implementation of a new ASPxGridView Batch Editing Mode functionality available starting with version 13.2:<br> <a href="https://community.devexpress.com/blogs/aspnet/archive/2013/12/16/asp-net-webforms-amp-mvc-gridview-batch-edit-what-39-s-new-in-13-2.aspx"><u>ASP.NET WebForms & MVC: GridView Batch Edit (What's new in 13.2)</u></a></p>
