@@ -6,7 +6,7 @@
 
 <!-- default badges end -->
 
-# ASPxGridView - A simple batch editing implementation
+# Grid View for ASP.NET Web Forms - A simple batch editing implementation
 
 <!-- run online -->
 
