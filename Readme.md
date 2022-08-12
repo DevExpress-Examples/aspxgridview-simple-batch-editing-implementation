@@ -18,11 +18,11 @@ This example demonstrates how to use the [ASPxGridView](https://docs.devexpress.
 
 ![Simple Batch Edit implementation](simple-batch-edit.png)
 
-When a Grid View is bound to an object data source at runtime, you need to implement CRUD logic required to edit data. To achieve this, use one of the following options:
+When a Grid View is bound to an object data source at runtime, you need to implement the CRUD logic required to edit data. To do this, use one of the following options:
 
 - Handle the ASPxGridView's [RowInserting](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.RowInserting), [RowUpdating](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.RowUpdating), and [RowDeleting](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.RowDeleting) events.
 
-  This technique allows you to handle each CRUD operation type individually in a separate event handler.
+  This technique allows you to handle each CRUD operation type in a separate event handler.
 
 - Handle the [BatchUpdate](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.BatchUpdate) event.
 
