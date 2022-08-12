@@ -14,7 +14,7 @@
 
 <!-- run online end -->
 
-This example demonstrates how to use the [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control's batch edit mode events to update a custom object data source stored in session.
+This example demonstrates how to use the [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control's batch edit mode events to update a custom object data source stored in the session.
 
 ![Simple Batch Edit implementation](simple-batch-edit.png)
 
