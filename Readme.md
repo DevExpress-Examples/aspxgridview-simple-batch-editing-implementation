@@ -1,24 +1,46 @@
 <!-- default badges list -->
+
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128532752/18.2.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5045)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* **[Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))**
-* [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
-<!-- default file list end -->
-# ASPxGridView - A simple Batch Editing implementation
+<!-- default badges end -->
+
+# ASPxGridView - A simple batch editing implementation
+
 <!-- run online -->
+
 **[[Run Online]](https://codecentral.devexpress.com/e5045/)**
+
 <!-- run online end -->
 
+This example demonstrates how to use the [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control's batch edit mode events to update a custom object data source stored in session.
 
-<p>This example illustrates a simple implementation of a new ASPxGridView Batch Editing Mode functionality available starting with version 13.2:<br> <a href="https://community.devexpress.com/blogs/aspnet/archive/2013/12/16/asp-net-webforms-amp-mvc-gridview-batch-edit-what-39-s-new-in-13-2.aspx"><u>ASP.NET WebForms & MVC: GridView Batch Edit (What's new in 13.2)</u></a></p>
-<p>This example is a standalone DB-independent solution of the online <a href="http://demos.devexpress.com/ASPxGridViewDemos/GridEditing/BatchEditing.aspx"><u>Batch Editing</u></a> demo. Refer to the demo's <strong>Description</strong> for more information.</p>
-<p>Handle the <strong>ASPxGridView RowInserting/RowUpdating/RowDeleting</strong> events if you want to submit a batch of modifications <strong>individually</strong> via a <strong>corresponding CRUD procedure</strong>.<br> Handle the <strong>ASPxGridView.BatchUpdate</strong> event if you want to submit a batch of modifications <strong>at once</strong> via a <strong>corresponding BatchUpdate procedure</strong>.<br><br>Note that this example uses a custom local data source stored in Session. The grid is bound to a list of objects of the GridDataItem type. The GridDataItem class here is implemented specially for this local data source. If you're using another data source, you can use the same approach to save the inserted/modified data in the RowInserting/RowUpdating/RowDeleting/BatchUpdate events without adding this class and modify your data by creating the corresponding requests to the data source in these event handlers</p>
+![Simple Batch Edit implementation](simple-batch-edit.png)
+
+When a Grid View is bound to an object data source at runtime, you need to implement CRUD logic required to edit data. To achieve this, use one of the following options:
+
+- Handle the ASPxGridView's [RowInserting](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.RowInserting), [RowUpdating](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.RowUpdating), and [RowDeleting](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.RowDeleting) events.
+
+  This technique allows you to handle each CRUD operation type individually in a separate event handler.
+
+- Handle the [BatchUpdate](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.BatchUpdate) event.
+
+  Use this technique to process all operations in a single handler.
 
 <br/>
 
+## Files to Look At
 
+- [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
+- [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
+
+## Documentation
+
+- [Batch Edit Mode](https://docs.devexpress.com/AspNet/16443/components/grid-view/concepts/edit-data/batch-edit-mode)
+- [Troubleshooting: Why the 'Specified method is not supported' and 'Updating is not supported by data source 'X' unless UpdateCommand is specified' errors occur](https://docs.devexpress.com/AspNet/403771/troubleshooting/grid-related-issues/crud-operations-with-custom-data-source)
+
+## More Examples
+
+- [Grid View for ASP.NET Web Forms - Prevent a batch edit action](https://github.com/DevExpress-Examples/aspxgridview-prevent-batch-edit-action)
+- [Grid View for ASP.NET Web Forms - Editing an in-memory dataset](https://github.com/DevExpress-Examples/aspxgridview-edit-in-memory-dataset)
