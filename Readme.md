@@ -40,5 +40,5 @@ When a Grid View is bound to an object data source at runtime, you need to imple
 
 ## More Examples
 
-- [Grid View for ASP.NET Web Forms - Prevent a batch edit action](https://github.com/DevExpress-Examples/aspxgridview-prevent-batch-edit-action)
+- [Grid View for ASP.NET Web Forms - Prevent the cell edit action on the client in batch edit mode](https://github.com/DevExpress-Examples/aspxgridview-prevent-batch-edit-action)
 - [Grid View for ASP.NET Web Forms - Editing an in-memory dataset](https://github.com/DevExpress-Examples/aspxgridview-edit-in-memory-dataset)
