@@ -6,9 +6,6 @@
 
 # Grid View for ASP.NET Web Forms - A simple batch editing implementation
 
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128532752/)**
-<!-- run online end -->
 
 This example demonstrates how to use the [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control's batch edit mode events to update a custom object data source stored in the session.
 
